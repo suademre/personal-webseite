@@ -6,100 +6,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suad's Webseite</title>
-    <style>
-
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Lobster&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f421a46cb5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+    <!-- Header-->
     <header>
-
-        <h1>Suad Emre UMAR</h1>
+        <!--Navbar-->
+        <h1 class="name">Suad Emre UMAR</h1>
+        <!--Navigation-->
         <nav>
+
             <ul>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="Biography">Biography</a></li>
+                <li><a href="#biografie">Biography</a></li>
+                <li><a href="#lebenslauf">Lebenslauf</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+
             </ul>
+
         </nav>
 
     </header>
 
 
     <main>
-        <section>
-            <img src="./images/bild.JPG" alt="Suad Emre Umar">
+        <!--Erste Section-->
+        <section class="erste-section">
+            <!--Erste Teil-->
+            <div class="erste-teil">
+                <p>Willkommen,</p>
+                <p>Ich bin SUAD </p>
+                <p>Ich bin Web Entwickler <br>& Data Scientist </p>
+
+                <button class="anschreiben"><a href="img/Anschreiben.pdf" target="_blank">Anschreiben</a> </button>
+                <button class="meincv"> <a href="images/Lebenslauf_Umar_Suad_Emre.pdf" target="_blank">Mehr Info LB</a>
+                </button>
+            </div>
+
+
+            <div class="foto">
+
+            </div>
         </section>
 
-        <section>
-            <h2>Interessen</h2>
-            <ul>
-                <li>Football</li>
-                <li>Basketball</li>
-                <li>Travel</li>
-                <li>Book</li>
-            </ul>
-
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Data Analyst</li>
-                <li>Machine Learning</li>
-            </ul>
+        <!--Biografie-->
+        <section id="biografie" class="biografie">
+            <img src="./images/foto.jpg" alt="">
+            <div>
+                <h2>Biografie</h2>
+                <p style="color: darkseagreen;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias maxime,
+                    recusandae consequuntur mollitia
+                    vitae delectus adipisci exercitationem eaque error, quod, esse quia distinctio eligendi incidunt
+                    quibusdam culpa corporis quis? Eligendi, quod libero. Dolores commodi nihil quos inventore, autem
+                    animi
+                    porro quas. Eos, sunt numquam repudiandae totam molestias sint? Adipisci, in? Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Id, doloribus aliquam. Necessitatibus, excepturi quisquam. Fugit
+                    laboriosam debitis vitae enim ipsum commodi reprehenderit dolorum
+                    numquam ipsa earum. Eligendi soluta veritatis ratione.</p>
+            </div>
         </section>
 
-        <section>
-            <h2>Kontaktinformationen</h2>
-            <article>
-                <img src="./images/apple-phone.png" alt="Telephone">
-                <p class="roter-text">+49 176 xxx xxx xx</p>
-            </article>
-            <article>
-                <img src="./images/email_icon_176616.png" alt="Email">
-                <p class="roter-text">xxxxxx@gmail.com</p>
-            </article>
-            <article>
-                <a href="https://github.com/suademre">
-                    <img src="./images/github.png" alt="Github">
-                    <p class="roter-text">Github</p>
-                </a>
-            </article>
-            <article>
-                <a href="https://www.linkedin.com/in/suademreumar/">
-                    <img src="./images/linkedin.jpeg" alt="linkedin">
-                    <p class="roter-text">Linkedin</p>
-                </a>
-            </article>
+        <!--Skills/Interessents-->
+        <section class="talent">
+            <h2>Fähigkeiten</h2>
+            <div class="skills">
+                <div class="web">
+                    <span>1</span>
+                    <p>Web Entwicklung</p>
+                    <ul>
+                        <li>HTML,CSS</li>
+                        <li>JavaScript</li>
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+
+                <div class="data">
+                    <span>2</span>
+                    <p>Data Science</p>
+                    <ul>
+                        <li>Machine Learning</li>
+                        <li>Data Analyst</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!--Interessents-->
+            <h2>Interessents</h2>
+            <div class="interessents">
+                <ul>
+
+                    <li><i class="fas fa-plane">Reisen</i></li>
+                    <li><i class="fas fa-book-reader">Lesen</i></li>
+                    <li><i class="fas fa-futbol">Fußball</i></li>
+                    <li><i class="fas fa-basketball-ball">Basketball</i></li>
+                </ul>
+
+            </div>
+
+
         </section>
 
-        <section>
-            <h2>Biografie</h2>
-            <p style="color: darkseagreen;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias maxime,
-                recusandae consequuntur mollitia
-                vitae delectus adipisci exercitationem eaque error, quod, esse quia distinctio eligendi incidunt
-                quibusdam culpa corporis quis? Eligendi, quod libero. Dolores commodi nihil quos inventore, autem animi
-                porro quas. Eos, sunt numquam repudiandae totam molestias sint? Adipisci, in?</p>
-        </section>
+
+
+
 
         <section>
-            <h2>Lebenslauf</h2>
-            <table>
+            <h2 id="lebenslauf">Lebenslauf</h2>
+            <table class="lebenslauf">
                 <tr>
                     <td>08.2021 - ∞</td>
                     <td>als Junior React Developer, Antwerpes AG, Köln</td>
                 </tr>
                 <tr>
                     <td>03.2021 - 05.2021</td>
-                    <td>Praktikan als Fullstack Web Entwickler, Vollstack, Aalen</td>
-                </tr>
-                <tr>
-                    <td>03.2021 - 05.2021</td>
                     <td>Praktikum als Fullstack Web Entwickler, Vollstack, Aalen</td>
                 </tr>
+
                 <tr>
                     <td>06.2021 - 11.2021</td>
                     <td>Weiterbildungsprogramm als Fullstack Entwickler, AlfaTraining, Düsseldorf</td>
@@ -109,13 +141,38 @@
                     <td>Praktikum als Data Scientist, GRI AI, London </td>
                 </tr>
                 <tr>
-                    <td>05.2019 - 08.2021</td>
+                    <td>05.2019 - 01.2021</td>
                     <td>Deutsck Kurs</td>
                 </tr>
+                <tr>
+                    <td>02.2014 - 01.2015</td>
+                    <td>Business Analyst, CAVME GROUP, Istanbul</td>
+                </tr>
+                <tr>
+                    <td>10.2008 - 08.2013</td>
+                    <td>Studium als Management-Informationssystem</td>
+                </tr>
+
+
             </table>
         </section>
 
+        <!--Kontack-->
 
+        <footer id="contact">
+            <h2>Kontaktinformationen</h2>
+            <p><i class="fas fa-map-marker-alt"> Düsseldorf</i> | <i class="fas fa-phone-volume"> +49 123 456 78 89 </i>
+                |
+                <i class="fas fa-envelope"> suadeumar@gmail.com</i>
+            </p>
+            <div class="contact">
+                <a href="https://www.linkedin.com/in/suademreumar/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.xing.com/profile/SuadEmre_Umar/cv" target="_blank"><i class="fab fa-xing"></i></a>
+                <a href="https://github.com/suademre" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.kaggle.com/suademre" target="_blank"><i class="fab fa-kaggle"></i></a>
+                <a href="#"><i class="fab fa-google-plus"></i></a>
+            </div>
 
     </main>
 

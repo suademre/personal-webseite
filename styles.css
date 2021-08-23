@@ -1,28 +1,318 @@
+/* font-family: 'Allison', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Permanent Marker', cursive; */
+
 /* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 } */
 
+
+/* Algemein */
 html{
     box-sizing: border-box;
 }
 
 *{
+    box-sizing: inherit;
+    /* margin: 0;
+    padding: 0; */
+    
+}
+
+body{
+    background-color: #F2F2F2;
+    /* background-color: #E6E3E3; */
+}
+
+ul{
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Header */
+header{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 7vh;
+    background-color: white;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 0px 5%;
+    margin-bottom: 10px;
+}
+
+.name{
+    font-family: 'Lobster', cursive;
+    color: #000000;
+    font-size: 32px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li a{
+    margin: 30px;
+    font-family: myriad pro regular;
+    color: #505050;
+    font-size: 15px;
+    font-weight: 700;
+
+    
+}
+
+/*Erste Sections*/
+
+.erste-section{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/*Erste Teil*/
+.erste-teil {
+    width: 35vw;
+    height: 40vh;
+    margin: 10vh 7vw;
+    padding-top: 55px;
+    padding-left: 70px;
+}
+
+.erste-teil p{
+    line-height: 0px;
+    margin: 45px 0px 25px;
+}
+
+.erste-teil p:nth-child(1){
+    font-weight: bold;
+    color: #6d6d6d;
+    font-size: 22px;
+}
+
+.erste-teil p:nth-child(2){
+    font-weight: bold;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+    font-size: 60px;
+}
+
+.erste-teil p:nth-child(3){
+    color: #403e3e;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+
+
+
+/*Allgemeine button*/
+.erste-teil button{
+    width: 130px;
+    height: 42px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin: 0px 10px;
+}
+
+.anschreiben{
+    border: 2px solid #373636;
+    color: black;
+}
+
+.meincv{
+    background-color: #0b0b0b;
+    color: #FFFFFF;
+    border: none;
+}
+
+
+button:hover{
+    background-color: red;
+}
+
+
+
+.foto{
+    width: 30vw;
+    height: 60vh;
+    border-radius: 10%;
+    background-image: url(images/foto.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #1a1a1a;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
+    border: 2px solid whitesmoke;
+    margin: 10vh 9%;
     box-sizing: border-box;
+
 }
 
-h1 { 
-    color:blue;
-    font-size: 2rem;
+
+/*Biografie*/
+.biografie{
+    width: 58vw;
+    height: 35vh;
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    margin: 0 10px 50px auto;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: auto;
 }
 
-.roter-text{
-    color: red;
+.biografie img{
+    width: 17vw;
+    height: 17vh;
+    border-radius:50%;
+    margin: auto 10px;
+    border: 1px solid chocolate;
+    box-shadow: 5px 5px 40px 10px rgba(0,0,0,0.4);
 }
 
-h2{
-    color: chocolate;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2em;
+.biografie h2{
+    font-family: 'Allison', cursive;
+    font-size: 50px;
 }
+
+/* Interessents/Skills */
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+    padding: 15px 100px;
+}
+
+/* .skills div{
+    width: 25vw;
+    height: 25vh;
+    background-color: white;
+    border-radius: 30%;
+    margin: 15px 100px;
+    padding: 15px 45px;
+    box-sizing: border-box;
+} */
+
+.web, .data{
+    width: 300px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.web span,
+.data span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.web p,
+.data p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+.talent li{
+    line-height:35px;
+}
+
+/*Interessents*/
+.interessents{
+    color: lightskyblue;
+}
+
+/*Lebenslauf*/
+.lebenslauf{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width:75%;
+}
+
+.lebenslauf td {
+    border: 1px solid #ddd;
+    padding: 15px;
+  }
+  
+  .lebenslauf tr:nth-child(even){
+      background-color: white;
+    }
+  
+  .lebenslauf tr:hover {
+      background-color: #ddd;
+    }
+  
+
+
+ /*Footer*/
+ footer{
+    width: 80vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    margin-left: 9vw;
+    margin-top: 50px;
+    margin-bottom: 25px;
+
+}
+
+footer p{
+    font-size: 20px;
+}
+
+.contact{
+    display: flex;
+}
+
+.contact a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e3e3;
+    margin: 20px 10px;
+    border-radius: 50%;
+}
+
+.contact i{
+    color: lightskyblue;
+}
+
+
